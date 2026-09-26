@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#081a33">
+  <meta name="description" content="Wetter Coach – kompakte Wetter-PWA im Stil einer modernen Vereins-App.">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Wetter Coach</title>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="app-header">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true">
+          <span class="sun"></span>
+          <span class="cloud"></span>
+        </div>
+        <div>
+          <div class="brand-title">WETTER COACH</div>
+          <div class="brand-version">V1.0</div>
+        </div>
+      </div>
+      <button class="location-button" id="locationButton" type="button" aria-label="Standort ändern">
+        <span class="location-dot">●</span>
+        <span id="locationLabel">Standort</span>
+      </button>
+    </header>
+
+    <main id="app" class="content" aria-live="polite"></main>
+
+    <div class="toast" id="toast" role="status"></div>
+
+    <div class="modal-backdrop hidden" id="locationModal" aria-hidden="true">
+      <section class="modal" role="dialog" aria-modal="true" aria-labelledby="locationTitle">
+        <div class="modal-header">
+          <div>
+            <div class="eyebrow">STANDORT</div>
+            <h2 id="locationTitle">Ort auswählen</h2>
+          </div>
+          <button class="icon-button" id="closeLocation" type="button" aria-label="Schließen">×</button>
+        </div>
+        <form id="locationForm">
+          <label for="citySearch">Stadt oder PLZ</label>
+          <div class="search-row">
+            <input id="citySearch" name="city" type="search" placeholder="z. B. Dachau" autocomplete="off" required>
+            <button class="primary-button" type="submit">Suchen</button>
+          </div>
+        </form>
+        <div class="location-results" id="locationResults"></div>
+        <button class="secondary-button full-width" id="useGps" type="button">Aktuellen Standort verwenden</button>
+      </section>
+    </div>
+  </div>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
