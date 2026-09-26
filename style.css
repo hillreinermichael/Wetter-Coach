@@ -330,3 +330,14 @@ input:focus { border-color: var(--navy-700); box-shadow: 0 0 0 3px rgba(21,59,10
 @media (min-width: 900px) {
   .modal-backdrop { place-items: center; }
 }
+
+.app-signature {
+  width: min(1080px, 100%);
+  margin: 0 auto;
+  padding: 0 18px calc(20px + env(safe-area-inset-bottom));
+  box-sizing: border-box;
+  text-align: center;
+  color: #8290a3;
+  font-size: 10px;
+  letter-spacing: .04em;
+}

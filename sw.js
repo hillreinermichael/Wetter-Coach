@@ -1,4 +1,4 @@
-const CACHE_NAME = 'wetter-coach-v1';
+const CACHE_NAME = 'wetter-coach-v1-001';
 const APP_SHELL = [
   './',
   './index.html',

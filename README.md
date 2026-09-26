@@ -33,3 +33,9 @@ python -m http.server 8080
 ```
 
 Danach `http://localhost:8080` öffnen.
+
+
+## Version
+V.1.001 – Wetter-Coach (V.1.001 by Mike)
+
+Weitere Versionen werden fortlaufend als V.1.002, V.1.003 usw. nummeriert.

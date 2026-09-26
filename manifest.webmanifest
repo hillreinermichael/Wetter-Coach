@@ -1,6 +1,6 @@
 {
-  "name": "Wetter Coach",
-  "short_name": "Wetter Coach",
+  "name": "Wetter-Coach (V.1.001 by Mike)",
+  "short_name": "Wetter-Coach",
   "description": "Mobile Wetter-PWA mit Tages- und 7-Tage-Übersicht.",
   "lang": "de-DE",
   "start_url": "./",
